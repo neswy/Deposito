@@ -4,6 +4,11 @@ package cuentas;
  *
  * @author Sergio Maga
  */
+
+/*
+Este comentario forma parte del punto 2 del 
+apartado GIT  de la Tarea 4 
+*/        
 public class CCuenta {
 
     /**
