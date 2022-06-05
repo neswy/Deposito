@@ -1,8 +1,11 @@
 package cuentas;
 
 /**
- *
+ * 
+ * Esta es la clase CCuenta
  * @author Sergio Maga
+ * @since 13.0
+ * @version 
  */
 
 /*
@@ -12,6 +15,7 @@ apartado GIT  de la Tarea 4
 public class CCuenta {
 
     /**
+     * 
      * @return the nombre
      */
     public String getNombre() {
@@ -19,20 +23,23 @@ public class CCuenta {
     }
 
     /**
-     * @param nombre the nombre to set
+     * 
+     * @param nombre de tipo string
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
     /**
-     * @return the cuenta
+     * 
+     * @return cuenta. Devuelve un string cuenta
      */
     public String getCuenta() {
         return cuenta;
     }
 
     /**
+     * 
      * @param cuenta the cuenta to set
      */
     public void setCuenta(String cuenta) {
@@ -40,6 +47,7 @@ public class CCuenta {
     }
 
     /**
+     * 
      * @return the saldo
      */
     public double getSaldo() {
@@ -47,36 +55,63 @@ public class CCuenta {
     }
 
     /**
-     * @param saldo the saldo to set
+     * 
+     * @param saldo de tipo double
      */
     public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
 
     /**
-     * @return the tipoInterés
+     * 
+     * @return the tipoInterés. Devuelve tipoInteres de tipo double
      */
     public double getTipoInterés() {
         return tipoInterés;
     }
 
     /**
-     * @param tipoInterés the tipoInterés to set
+     * 
+     * @param tipoInterés de tipo double
      */
     public void setTipoInterés(double tipoInterés) {
         this.tipoInterés = tipoInterés;
     }
 
-
+    /**
+     *
+     */
     public String nombre;
+
+    /**
+     *
+     */
     public String cuenta;
+
+    /**
+     *
+     */
     public double saldo;
+
+    /**
+     *
+     */
     public double tipoInterés;
 
+    /**
+     *
+     */
     public CCuenta()
     {
     }
 
+    /**
+     * 
+     * @param nom tipo string
+     * @param cue tipo string
+     * @param sal tipo double
+     * @param tipo tipo double
+     */
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         nombre =nom;
@@ -84,11 +119,19 @@ public class CCuenta {
         saldo=sal;
     }
 
+    /**
+     * 
+     * @return parametro getSaldo
+     */
     public double estado()
     {
         return getSaldo();
     }
-
+    /**
+     * 
+     * @param cantidad
+     * @throws java.lang.Exception
+     */
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)
@@ -96,6 +139,11 @@ public class CCuenta {
         setSaldo(getSaldo() + cantidad);
     }
 
+    /**
+     * 
+     * @param cantidad
+     * @throws java.lang.Exception  
+     */
     public void retirar(double cantidad) throws Exception
     {
         if (cantidad <= 0)

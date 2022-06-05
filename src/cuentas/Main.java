@@ -1,18 +1,26 @@
 package cuentas;
 
 /**
- *
+ * 
  * @author Sergio Maga
  */
 public class Main {
-
+    
+    
+    /**
+     * 
+     * @param args 
+     */
     public static void main(String[] args) {
         CCuenta cuenta1;
         double saldoActual;
 
         operativa_cuenta(0);
     }
-
+    /**
+     * 
+     * @param cantidad 
+     */
     public static void operativa_cuenta(float cantidad) {
         CCuenta cuenta1;
         double saldoActual;
